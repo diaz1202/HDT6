@@ -27,7 +27,7 @@ public class Main {
                     + "2. TreeSet"
                     + "3. LinkedHashSet"));
             if(opc==1){
-                SetFactory<Desarrolladores> personas = new HashSet<Desarrolladores>();
+                HashSet<Desarrolladores> personas = new HashSet<Desarrolladores>();
             }
         }
     }
