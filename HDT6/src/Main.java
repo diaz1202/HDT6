@@ -1,5 +1,7 @@
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
 import javax.swing.JOptionPane;
 
 /*
@@ -28,6 +30,12 @@ public class Main {
                     + "3. LinkedHashSet"));
             if(opc==1){
                 HashSet<Desarrolladores> personas = new HashSet<Desarrolladores>();
+            }
+            if(opc==2){
+                TreeSet<Desarrolladores> personas = new TreeSet<Desarrolladores>();
+            }
+            if(opc==3){
+                LinkedHashSet<Desarrolladores> personas = new LinkedHashSet<Desarrolladores>();
             }
         }
     }
