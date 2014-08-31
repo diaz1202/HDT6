@@ -15,13 +15,13 @@ import java.util.TreeSet;
  * @author Alejo
  */
 class SetFactory<E> {
-    public Set<E> getSET(String opcion)
+    public Set<E> getSET(int opcion)
     {
-        if(opcion.equals("HS"))
+        if(opcion==1)
         {
             return new HashSet<E>();
         }
-        if (opcion.equals("TS"))
+        if (opcion==2)
         {
             return new TreeSet<E>();
         }
