@@ -23,6 +23,7 @@ public class Main {
     public static void main(String[] args)
     {
         // TODO code application logic here
+<<<<<<< HEAD
         SetFactory implemt = new SetFactory();
         Scanner scan = new Scanner(System.in);
         String nombre;
@@ -39,6 +40,25 @@ public class Main {
                 + "\n1)HashSet"
                 + "\n2)TreeSet"
                 + "\n3) LinkedHashSet"));         
+=======
+        boolean cont = true;
+        
+        while(cont){
+            int opc = Integer.parseInt(JOptionPane.showInputDialog("Que tipo de implementacion desea usar:"
+                    + "1. HashSet"
+                    + "2. TreeSet"
+                    + "3. LinkedHashSet"));
+            if(opc==1){
+                
+                HashSet<Desarrolladores> personas = new HashSet<Desarrolladores>();
+            }
+            if(opc==2){
+                TreeSet<Desarrolladores> personas = new TreeSet<Desarrolladores>();
+            }
+            if(opc==3){
+                LinkedHashSet<Desarrolladores> personas = new LinkedHashSet<Desarrolladores>();
+            }
+>>>>>>> origin/master
         }
             
           Set <String> java = implemt.getSET (entrada);
