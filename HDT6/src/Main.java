@@ -29,6 +29,7 @@ public class Main {
                     + "2. TreeSet"
                     + "3. LinkedHashSet"));
             if(opc==1){
+                
                 HashSet<Desarrolladores> personas = new HashSet<Desarrolladores>();
             }
             if(opc==2){
