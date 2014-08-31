@@ -28,14 +28,14 @@ public class Main {
         String nombre;
         int grupo,entrada;
         boolean subconjunto;
-        entrada=Integer.parseInt(JOptionPane.showInputDialog("¿Que tipo de implementación de Stack desea?"
+        entrada=Integer.parseInt(JOptionPane.showInputDialog("¿Que tipo de implementación de SET desea?"
                 + "\n1)HashSet"
                 + "\n2)TreeSet"
                 + "\n3) LinkedHashSet"));
         while (entrada!=1 && entrada !=2 && entrada!=3)
         {
            JOptionPane.showMessageDialog(null, "Usted no ha ingresado una opcion valida");
-            entrada=Integer.parseInt(JOptionPane.showInputDialog("¿Que tipo de implementación de Stack desea?"
+            entrada=Integer.parseInt(JOptionPane.showInputDialog("¿Que tipo de implementación deSET desea?"
                 + "\n1)HashSet"
                 + "\n2)TreeSet"
                 + "\n3) LinkedHashSet"));         
@@ -81,6 +81,7 @@ public class Main {
               
           }
           
+            
           resultado1.addAll(web);
           resultado1.retainAll(java);
           resultado1.retainAll(celular);
@@ -104,11 +105,11 @@ public class Main {
           System.out.println("Experiencia en Web o celulares pero no en java:"+resultado4);
           
           subconjunto=java.containsAll(web);
-          if(subconjunto==true)
+          if(subconjunto==false)
           {
               System.out.println("El conjunto de java no es subconjunto del conjunto web");
           }
-          if(subconjunto==false)
+          if(subconjunto==true)
           {
               System.out.println("El conjunto de java es subconjunto del conjunto web");
           }
@@ -134,6 +135,9 @@ public class Main {
               System.out.println("Sus nombres son:" + celular);
               resultado6=celular;
           }
+          
+          Set ordenado = new TreeSet(resultado6);
+          System.out.println("Impresion del conjunto con mas numero de elementos:\n"+ordenado);
     }
     
 }
