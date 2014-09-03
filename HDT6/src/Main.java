@@ -97,9 +97,8 @@ public class Main {
           resultado3.addAll(celular);
           resultado3.retainAll(web);
           resultado3.removeAll(java);
-          System.out.println("Expereincie en Web y celulares pero no en java:"+ resultado3);
+          System.out.println("Expereincia en Web y celulares pero no en java:"+ resultado3);
           
-          resultado4.addAll(celular);
           resultado4.addAll(celular);
           resultado4.removeAll(web);
           System.out.println("Experiencia en Web o celulares pero no en java:"+resultado4);
